@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>FPIfpi Кликер</title>
+  <!-- Подключаем шрифт для ретро-стиля -->
+  <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="container">
+    <header>
+      <!-- Анимированный логотип в формате webm -->
+      <video id="logo" class="logo" autoplay loop muted>
+        <source src="fpi.webm" type="video/webm">
+        Ваш браузер не поддерживает видео.
+      </video>
+      <h1>FPIfpi Кликер</h1>
+      <p>Кликни на логотип, чтобы заработать FPI!</p>
+    </header>
+    <main>
+      <div class="score-board">
+        <p>Очки: <span id="score">0</span></p>
+      </div>
+      <section class="store">
+        <h2>Магазин</h2>
+        <div class="store-item" id="multiplier">
+          <p>Увеличитель клика</p>
+          <p>Цена: <span id="multiplierCost">50</span> FPI</p>
+          <p>Уровень: <span id="multiplierLevel">0</span></p>
+          <button id="buyMultiplier">Купить</button>
+        </div>
+        <div class="store-item" id="autoclicker">
+          <p>Автокликер</p>
+          <p>Цена: <span id="autoclickerCost">100</span> FPI</p>
+          <p>Куплено: <span id="autoclickerCount">0</span></p>
+          <button id="buyAutoclicker">Купить</button>
+        </div>
+      </section>
+    </main>
+    <footer>
+      <p>Неофициальное приложение по мотивам FPI</p>
+    </footer>
+  </div>
+  <script src="script.js"></script>
+</body>
+</html>

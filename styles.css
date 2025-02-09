@@ -1,0 +1,110 @@
+/* Сброс стандартных стилей */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Фон страницы – фиолетово-зелёный градиент */
+body {
+  background: linear-gradient(135deg, #6a0dad, #39ff14);
+  font-family: 'Press Start 2P', cursive;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  color: #fff;
+}
+
+/* Основной контейнер приложения */
+.container {
+  background: rgba(0, 0, 0, 0.8);
+  padding: 30px 20px;
+  border-radius: 20px;
+  text-align: center;
+  width: 90%;
+  max-width: 600px;
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.5);
+}
+
+/* Стили для анимированного логотипа (видео) */
+.logo {
+  width: 120px;
+  height: auto;
+  cursor: pointer;
+  margin-bottom: 15px;
+  transition: transform 0.2s ease;
+}
+
+.logo:hover {
+  transform: scale(1.1);
+}
+
+/* Заголовок и описание */
+header h1 {
+  font-size: 2.5rem;
+  margin-bottom: 10px;
+  text-shadow: 2px 2px 4px #000;
+}
+
+header p {
+  font-size: 1rem;
+  margin-bottom: 20px;
+}
+
+/* Табло для счета */
+.score-board {
+  margin: 20px 0;
+  font-size: 1.5rem;
+  border: 2px solid #39ff14;
+  border-radius: 10px;
+  padding: 10px;
+  background: rgba(255, 255, 255, 0.1);
+}
+
+/* Магазин */
+.store {
+  margin-top: 30px;
+  text-align: left;
+}
+
+.store h2 {
+  font-size: 1.8rem;
+  margin-bottom: 10px;
+  text-align: center;
+}
+
+.store-item {
+  background: rgba(0, 0, 0, 0.5);
+  border: 2px solid #39ff14;
+  border-radius: 10px;
+  padding: 15px;
+  margin: 10px 0;
+}
+
+.store-item p {
+  margin-bottom: 10px;
+  font-size: 1rem;
+}
+
+.store-item button {
+  background: #39ff14;
+  color: #000;
+  border: none;
+  border-radius: 5px;
+  padding: 8px 15px;
+  cursor: pointer;
+  font-family: 'Press Start 2P', cursive;
+  transition: background 0.2s ease;
+}
+
+.store-item button:hover {
+  background: #32d12a;
+}
+
+/* Футер */
+footer {
+  margin-top: 20px;
+  font-size: 0.8rem;
+  opacity: 0.8;
+}
